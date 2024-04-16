@@ -1,0 +1,511 @@
+/* 4 - External */
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: green;
+}
+
+p {
+    color: brown;
+}
+
+/* Class */
+.paragraph {
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+}
+
+/* ID */
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* Rules Order */
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.title {
+    border-bottom: 3px solid blue;
+}
+
+#other-title {
+    border-bottom: 4px solid green;
+}
+
+/* Color Names */
+.color-name {
+    color: crimson;
+}
+
+/* Color Hex */
+.hex {
+    color: #55a398;
+}
+
+.hex2 {
+    color: #76f985
+}
+
+/* Simple Hex */
+.hex {
+    color: #000;
+}
+
+.hex2 {
+    color: #123;
+}
+
+/* Color RGB */
+.rgb-color {
+    color: rgb(25, 0, 49)
+}
+
+.rgb-color2 {
+    color: rgb(99,71,0)
+}
+
+/* Color RGBA */
+.rgba-color {
+    color: RGBA(200, 91, 19)
+}
+
+.rgba-color2 {
+    color: RGBA(100,21,99)
+}
+
+/* Color HSL */
+.rgba-color {
+    color: hsl(100, 20, 50);
+}
+
+.rgba-color2 {
+    color: hsl(209,51,69);
+}
+
+/* Background */
+.bg {
+    background-color: #000;
+    color: yellow;
+}
+
+.bg2 {
+    background-color: #ae8952;
+    color: rgb(58, 244, 26)
+}
+
+/* Background Opacity */
+.bg-opacity {
+    background-color: gray;
+    opacity: 0.5;
+}
+
+/* Background with RGBA Opacity */
+.rgba-opacity {
+    background-color: rgba(90,120,20,0.2);
+    color: black
+}
+
+/* Background Image */
+.bg-image {
+    background-image: url("../img/paisagem.jpeg");
+    padding: 10px;
+    color: white;
+}
+
+/* Background Image Centralized */
+.not-centered-bg,
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/paisagem.jpeg");
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;     
+}   
+
+/* Height and Width set up */
+.height-width {
+    height: 200px;
+    width: 100px;
+    background-color: blue;
+}
+
+.height-width-2 {
+    height: 300px;
+    background-color: grey;
+}
+
+/* Padding */
+.without-padding {
+    background-color: #111;
+    color: #FFF;
+
+}
+
+.padding {
+    padding: 20px;
+}
+
+/* Individual Padding */
+
+.padding-individual {
+    background-color: #222;
+    color: #FFF;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+/* Shorthand Padding: Top, right, bottom, left*/
+.shorthand-padding {
+    background-color: #444;
+    padding: 6px 12px 18px 24px
+}
+
+.shorthand-padding-2 {
+    background-color: #555;
+    padding: 10px 20px;
+    /* padding: 10px 20px 10px 20px */
+}
+
+/* Padding with width */
+.without-border-box {
+    background-color: #444;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box {
+    background-color: #666;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Border */
+.border {
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border-2 {
+    border: 2px dotted #846;
+    padding: 20px;
+}
+
+/* Individual Border */
+.border-left {
+    border-left: 15px solid green;
+    background-color: grey;
+    padding: 25px;
+}
+
+.border-bottom {
+    border-bottom: 8px double #399;
+    background-color: #222;
+    padding: 20px;
+}
+
+/* Rounded Border */
+.rounded-p {
+    border: 4px solid blue;
+    background-color: black;
+    color: blue;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.rounded-p-2 {
+    background-color: black;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+/* Margin */
+.margin {
+    margin: 10px;
+    background-color: #222;
+}
+
+.margin-top {
+    margin-top: 50px;
+    background-color: #444;
+    padding: 10px;
+}
+
+.margin-shorthand {
+    background-color: #666;
+    margin: 5px 10px 15px 20px;
+}
+
+/* Box Model */
+.box-model {
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #845;
+    border-radius: 7px;
+    width: 300px;
+    height: 400px;
+}
+
+/* Desafio 3 */
+
+#box-model {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    padding: 15px;
+    border: 5px solid red;
+    background-color: lightblue;
+    outline: 5px solid blue;
+}
+
+.box-text {
+    background-color: lightgreen;
+}
+
+
+/* Text Align */
+.text-aligned {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* Text decoration */
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+}
+
+/* Text transform */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* Letter Space */
+.spacing {
+    letter-spacing: 5px;
+}
+
+/* Letter font */
+.serif {
+    font-family: Georgia;
+}
+
+/* Most used font for websites is the sans-serif*/
+.sans-serif {
+    font-family: Helvetica;
+}
+
+.monospace {
+    font-family: 'Courier New';
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* Font Style */
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* Font Weight */
+
+.thin, .bold, .bolder {
+    font-family: Helvetica;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+/* Font Size */
+
+.small {
+    font-size: 6px;
+}
+
+.big {
+    font-size: 78px;
+}
+
+/* Display */
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: #333;
+    display: block;
+    margin: 10px;
+}
+
+/* Hide element */
+.invisible {
+    display: none;
+}
+
+/* Element position static */
+.static {
+    position: static;
+    background-color: #391;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+/* Element position relative */
+.relative {
+    position: relative;
+    background-color: #224;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+}
+
+/* Element position absolute */
+.absolute {
+    position: absolute;
+    background-color: #964;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* Element position absolute with relative */
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute1,
+.absolute2 {
+    width: 50px;
+    height: 50px;
+    background-color: #422;
+    position: absolute;
+}
+
+.absolute1 {
+    top: 10px;
+    left: 10px;
+}
+
+.absolute2 {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Element position fixed */
+.fixed {
+    width: 100px;
+    height: 100px;
+    background-color: #851;
+    border: 1px solid blue;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+/* Element position sticky */
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: #994;
+    border: 1px solid green;
+    position: sticky;
+    top: 10px;
+}
+
+/* Z-index */
+.absolute3,
+.absolute4,
+.absolute5 {
+    width: 50px;
+    height: 50px;
+    background-color: #123;
+    position: absolute;
+}
+
+.absolute3 {
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.absolute4 {
+    top: 10px;
+    left: 10px;
+    background-color: #246;
+    z-index: 2;
+}
+
+.absolute5 {
+    top: 40px;
+    left: 40px;
+    background-color: #453;
+    z-index: 1;     /* Could be empty */
+}
+
+
+
+
+
+

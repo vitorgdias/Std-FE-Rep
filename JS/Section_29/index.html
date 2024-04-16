@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Axios</title>
+        <!-- Primeiro importa o script externos -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+        <!-- 6 - Global Instance -->
+        <script src="/JS/Section_29/js/global.js"></script>
+        <!-- 7 - Custom Instance -->
+        <!-- Utiliza-se ou a Custom ou a Global, nunca as duas juntas -->
+        <script src="/JS/Section_29/js/custom.js"></script>
+        <!-- 8 - Interceptors -->
+        <script src="/JS/Section_29/js/interceptors.js"></script>
+        <!-- Depois importa o script interno -->
+        <script src="/JS/Section_29/js/scripts.js" defer></script>
+    </head>
+    <body>
+        <h1>Axios</h1>
+        <!-- 5 - Post -->
+        <h2>Insira um novo Post</h2>
+        <form id="post-form">
+            <div>
+                <input type="text" id="title" placeholder="Digite um Título" />
+            </div>
+            <div>
+                <textarea id="body"></textarea>
+            </div>
+            <input type="submit" value="Criar Post" />
+        </form>
+        <!-- 3 - Inserindo dados -->
+        <div id="user-container"></div>
+    </body>
+</html>

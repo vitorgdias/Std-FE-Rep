@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "name": "capa de chuva",
+      "price": "50.50",
+      "id": "5"
+    },
+    {
+      "name": "teclado",
+      "price": "110",
+      "id": "6"
+    },
+    {
+      "name": "cadeira",
+      "price": "200",
+      "id": "7"
+    },
+    {
+      "id": "f835",
+      "name": "teste",
+      "price": "1"
+    },
+    {
+      "id": "525e",
+      "name": "carregamento",
+      "price": "123"
+    },
+    {
+      "id": "693e",
+      "name": "teste post",
+      "price": "10"
+    },
+    {
+      "id": "5c95",
+      "name": "teste post",
+      "price": "10"
+    },
+    {
+      "id": "ae40",
+      "name": "teste",
+      "price": "25"
+    },
+    {
+      "id": "5b96",
+      "name": "teste",
+      "price": "26"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+h4 {
+    color: aqua;
+    border-bottom: 5px solid red;
+    font-size: 35px;
+}
+
+/* Comment */
+/* Ctrl+: to input automatic comments */
+/* Don't insert sensitive data in the comments, because is visible to everyone */
