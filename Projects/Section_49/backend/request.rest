@@ -1,0 +1,146 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+    {
+      "name": "Decoração",
+      "description": "Escolha a decoração para sua festa, e nós a montamos.",
+      "price": 1400,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    }
+
+###
+GET http://localhost:3000/api/services
+# retorna todos os id registrados.
+
+###
+GET http://localhost:3000/api/services/663251550b2a4c5d372c8d75
+# retorna o id específico da requisição
+
+###
+GET http://localhost:3000/api/services/663251550b2a4c5d372c8d74 
+# Irá retornar status 404, pois o id não existe
+
+###
+DELETE http://localhost:3000/api/services/663251550b2a4c5d372c8d75
+
+###
+PUT http://localhost:3000/api/services/6632576d2af1bbc9db54e9c6
+Content-Type: application/json
+
+{
+    "name": "TEST ATUALIZAÇÃO",
+    "description": "Alguma Descrição 2",
+    "price": 2500,
+    "image": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2139&auto=format&fit=crop&ixlib=rb-4.0.3ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
+
+
+# Parties tests
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Vitor",
+    "description": "Birthday Party",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlydGhkYXl8ZW58MHx8MHx8fDA%3D"
+}
+
+# Serviços acima aparece com array vazio, pois não foram declarados
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Vitor",
+    "description": "Birthday Party",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlydGhkYXl8ZW58MHx8MHx8fDA%3D",
+    "services": [
+        {
+            "name": "Algum Serviço 2",
+            "description": "Alguma Descrição 2",
+            "price": 1600,
+            "image": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2139&auto=format&fit=crop&ixlib=rb-4.0.3ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Algum Serviço 1",
+            "description": "Alguma Descrição 1",
+            "price": 3000,
+            "image": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2139&auto=format&fit=crop&ixlib=rb-4.0.3ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
+
+# Acima foram inseridos serviços dentro do evento e dentro do orçamento
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 3",
+    "author": "Vitor",
+    "description": "Birthday Party",
+    "budget": 3000,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlydGhkYXl8ZW58MHx8MHx8fDA%3D",
+    "services": [
+        {
+            "name": "Algum Serviço 2",
+            "description": "Alguma Descrição 2",
+            "price": 1600,
+            "image": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2139&auto=format&fit=crop&ixlib=rb-4.0.3ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Algum Serviço 1",
+            "description": "Alguma Descrição 1",
+            "price": 3000,
+            "image": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2139&auto=format&fit=crop&ixlib=rb-4.0.3ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/66326bb1337efbb0fd72b217
+
+###
+GET http://localhost:3000/api/parties/66326bb1337efbb0fd72b218
+# Com erro
+
+###
+DELETE http://localhost:3000/api/parties/66326bb1337efbb0fd72b217
+
+###
+PUT http://localhost:3000/api/parties/66326c5e337efbb0fd72b219
+Content-Type: application/json
+
+{
+    "title": "Meu evento 3 - Atualizado",
+    "author": "Vitor",
+    "description": "Birthday Party",
+    "budget": 10000,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlydGhkYXl8ZW58MHx8MHx8fDA%3D",
+    "services": [
+        {
+            "name": "Algum Serviço 2",
+            "description": "Alguma Descrição 2",
+            "price": 1600,
+            "image": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2139&auto=format&fit=crop&ixlib=rb-4.0.3ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Algum Serviço 1",
+            "description": "Alguma Descrição 1",
+            "price": 3000,
+            "image": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2139&auto=format&fit=crop&ixlib=rb-4.0.3ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
